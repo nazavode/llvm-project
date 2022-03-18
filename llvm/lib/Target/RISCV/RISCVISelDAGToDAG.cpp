@@ -811,6 +811,7 @@ void RISCVDAGToDAGISel::Select(SDNode *Node) {
       case MVT::i32:
         if (simm12) Opcode = RISCV::P_LW_ri_PostIncrement;
         else        Opcode = RISCV::P_LW_rr_PostIncrement;
+        break;
       default: break;
     }
 
