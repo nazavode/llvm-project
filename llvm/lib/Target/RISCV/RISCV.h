@@ -39,6 +39,8 @@ FunctionPass *createRISCVISelDag(RISCVTargetMachine &TM);
 
 FunctionPass *createRISCVMergeBaseOffsetOptPass();
 FunctionPass *createPULPHardwareLoops();
+void initializePULPHardwareLoopsPass(PassRegistry &);
+
 FunctionPass *createPULPFixupHwLoops();
 void initializeRISCVMergeBaseOffsetOptPass(PassRegistry &);
 
